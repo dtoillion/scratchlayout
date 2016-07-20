@@ -1,0 +1,11 @@
+section
+  h1 Create a new card
+  = form_for :card, url: cards_path do |f|
+    p
+      = f.label :title
+      = f.text_field :title
+    p
+      = f.label :text
+      = f.text_field :text
+    p
+      = f.submit

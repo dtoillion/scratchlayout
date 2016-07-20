@@ -1,0 +1,28 @@
+.slide_down,
+.fadein
+  transform: translateZ(0)
+  animation-timing-function: ease
+  animation-fill-mode: forwards
+.slide_down
+  animation-name: slidedown
+  animation-delay: 1s
+  animation-duration: 0.5s
+.fadein
+  animation-name: fadein
+  animation-delay: 1s
+  animation-duration: 0.7s
+
+@keyframes slidedown
+  from
+    top: -200px
+
+  to
+    top: 0
+
+@keyframes fadein
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
