@@ -1,4 +1,7 @@
 class CardsController < ApplicationController
+
+  http_basic_authenticate_with name: "card_maker", password: "card_maker", except: [:index, :show]
+
   def index
     @cards = Card.all
   end
