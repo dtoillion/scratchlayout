@@ -1,0 +1,13 @@
+section
+  p
+    strong Title:
+    = @card.title
+  p
+    strong Text:
+    = @card.text
+  p
+    = link_to 'Back', cards_path
+    = link_to 'Edit', edit_card_path(@card)
+    = link_to 'Destroy', card_path(@card),
+      method: :delete,
+      data: { confirm: 'Are you sure?' }
