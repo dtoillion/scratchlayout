@@ -8,11 +8,20 @@ blockquote
   border-left: 6px solid $accent
   padding-left: 3%
   margin: 0
+  p
+    margin: 0
 
 img
   width: 100%
   max-width: 100%
   border-radius: 2px
+
+span.skill
+  font-weight: 700
+  color: $gray
+  display: inline-block
+  text-transform: uppercase
+  margin-right: 3%
 
 section
   margin: 0 auto
@@ -47,13 +56,16 @@ header
     display: block
     height: 4px
     width: 100%
-    background: $green01
-    background: $green-bg
+    background: $bar-bg
 
 main
   min-height: 24em
   background: $white
-  color: $black
+  color: $gray-dark
+  p
+    color: $black
+  section
+    border-bottom: 1px dashed $accent
 
 footer
   text-align: center
@@ -63,7 +75,7 @@ footer
   p
     font-size: 0.7em
   a.button
-    opacity: 0
+    opacity: 0.7
     background: $accent
     font-weight: 700
     font-size: 0.7em
@@ -71,6 +83,7 @@ footer
     margin-right: 10px
     &:hover
       color: $black
+      opacity: 1
 
 @media screen and (min-width: 1200px)
   section
@@ -78,16 +91,16 @@ footer
 
 @media screen and (min-width: 980px) and (max-width: 1200px)
   section
-    width: 980px
+    width: 80%
 
 @media screen and (min-width: 600px) and (max-width: 980px)
   section
-    width: 600px
+    width: 95%
 
 @media screen and (max-width: 600px)
   section,
   [class*="col-"]
-    width: 100%
+    width: 97%
 
 @media screen and (max-width: 320px)
   header h1
