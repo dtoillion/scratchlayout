@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'normalize-rails'
 gem 'pg'
 gem 'rails', '4.2.6'
+gem 'rails_12factor'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
