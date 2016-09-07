@@ -1,13 +1,19 @@
 section.center
   h1 Space In Yo Face
-  p Coded from scratch in Unity3D with artwork from Kenney.nl and Music from argofox artists.
+  p
+    | Coded from scratch in Unity3D with artwork from 
+    => link_to "Kenney.nl", "http://kenney.nl/", target: "_blank"
+    | and Music from 
+    = link_to "Thomas-VX", "https://soundcloud.com/thomas-vx", target: "_blank"
+    | .
 section.center
-  .col-4.pad
-    = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-NG-Thumb-0.9.1.jpg"), "https://www.dropbox.com/s/784bd1ot44djuf0/SIYF-Windows.zip?dl=1", target: "_blank"
-    = link_to "Windows", "https://www.dropbox.com/s/784bd1ot44djuf0/SIYF-Windows.zip?dl=1", class: "button accent_light"
-  .col-4.pad
-    = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-NG-Thumb-0.9.1.jpg"), "https://www.dropbox.com/s/u3exz1bsnb50ia7/SIYF-MACOSX.zip?dl=1", target: "_blank"
-    = link_to "Mac OS X", "https://www.dropbox.com/s/u3exz1bsnb50ia7/SIYF-MACOSX.zip?dl=1", class: "button accent_light"
-  .col-4.pad
-    = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-NG-Thumb-0.9.1.jpg"), "http://www.newgrounds.com/portal/view/676539", target: "_blank"
+  .col-3.pad= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-Splash-Image-0.9.6.jpg"
+  .col-3.pad
+    / = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-Splash-Image-0.9.6.jpg"), "https://www.dropbox.com/s/d3kik4cp9k3hn71/SIYF-WIN-0.9.6.zip?dl=1", target: "_blank"
+    = link_to "Windows", "https://www.dropbox.com/s/d3kik4cp9k3hn71/SIYF-WIN-0.9.6.zip?dl=1", class: "button accent_light"
+  .col-3.pad
+    / = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-Splash-Image-0.9.6.jpg"), "https://www.dropbox.com/s/gh9infmc2psr5t3/SIYF-MACOSX-0.9.6.zip?dl=1", target: "_blank"
+    = link_to "Mac OS X", "https://www.dropbox.com/s/gh9infmc2psr5t3/SIYF-MACOSX-0.9.6.zip?dl=1", class: "button accent_light"
+  .col-3.pad
+    / = link_to image_tag("https://dl.dropboxusercontent.com/u/3968416/scratchlayout/SIYF-Splash-Image-0.9.6.jpg"), "http://www.newgrounds.com/portal/view/676539", target: "_blank"
     = link_to "WebGL", "http://www.newgrounds.com/portal/view/676539", class: "button accent_light"
