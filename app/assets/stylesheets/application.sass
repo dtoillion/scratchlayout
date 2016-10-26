@@ -43,11 +43,8 @@ body
   #menu-toggle:hover
     color: $green
     background: $black
-  .header nav a
-    border-top: 2px dashed $green
 
   .contents
-    overflow: auto
     background: $black
     .row
       border-bottom: 2px dashed $green
@@ -88,3 +85,7 @@ body
     &:hover
       color: $black
       opacity: 1
+
+@media screen and (max-width: 860px)
+  .header nav a
+    border-top: 2px dashed $green
