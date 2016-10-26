@@ -1,4 +1,4 @@
-.row#top-of-page
+.row#top-of-page.no_border
   .section.padded
     .col-1-3
       = image_tag "danieltoillion.jpg"
@@ -29,9 +29,12 @@
         span Premier Pro
         span Animate
         span Unity
-
-      p= mail_to "dan@scratchlayout.com", "Hire Me", class: "btn green"
     .clear
+
+.row.hero
+  .section.center
+    h2 Let's make a website!
+    p= mail_to "dan@scratchlayout.com", "Hire Me", class: "btn white"
 
 .row#design
   .section
@@ -50,7 +53,7 @@
     .full
       div data-height="500" data-theme-id="24711" data-slug-hash="jrrMYa" data-default-tab="result" data-user="dtoillion" data-embed-version="2" class="codepen"
     .clear
-    p.center= link_to "See More", "http://codepen.io/dtoillion/", target: "_blank", class: "btn green"
+    p.center.see_more= link_to "See More", "http://codepen.io/dtoillion/", target: "_blank", class: "btn green"
 
 .row#video-games
   .section
@@ -59,12 +62,8 @@
       | A new venture of mine is game development, mostly in Unity3D. You can play a couple of my more complete projects on
       =< link_to "itch.io", "https://blackdogserenade.itch.io/", target: "_blank"
       | .
-    .col-1-2
-      iframe frameborder="0" src="https://itch.io/embed/92237?dark=true" width="552" height="167"
-    .col-1-2
-      iframe frameborder="0" src="https://itch.io/embed/91185?dark=true" width="552" height="167"
-    .clear
-    p.center= link_to "See More", "https://blackdogserenade.itch.io/", class: "btn green", target: "_blank"
+    iframe frameborder="0" src="https://itch.io/embed/92237?dark=true" width="552" height="167"
+    iframe frameborder="0" src="https://itch.io/embed/91185?dark=true" width="552" height="167"
 
 .row#art-photo-video
   .section
@@ -82,6 +81,9 @@
     .col-1-2= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/rhode-island-time-collapse.jpg"
     .col-1-2
       .video_wrap
+        iframe width="100%" height="auto" src="https://www.youtube.com/embed/jpg5WeQARv8" frameborder="0" allowfullscreen="true"
+    .col-1-2
+      .video_wrap
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/TNJvX4rvDSI" frameborder="0" allowfullscreen="true"
     .col-1-2
       .video_wrap
@@ -90,6 +92,6 @@
       .video_wrap
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/gbLS2Q-wGJI" frameborder="0" allowfullscreen="true"
     .clear
-    p.center= link_to "See More", "https://www.youtube.com/user/upfull0ne", target: "_blank", class: "btn green"
+    p.center.see_more= link_to "See More", "https://www.youtube.com/user/upfull0ne", target: "_blank", class: "btn green"
 
 script src="//assets.codepen.io/assets/embed/ei.js"
