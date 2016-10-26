@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title scratchLayout
+    title scratchLayout | Daniel Toillion
     = favicon_link_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -11,5 +11,6 @@ html
 
   body
     = render "layouts/header"
-    main= yield
+    .contents
+      = yield
     = render "layouts/footer"
