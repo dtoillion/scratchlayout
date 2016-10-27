@@ -7,7 +7,7 @@
       input#menu-toggle type='checkbox'
       ul.menu
         / li= link_to "scratchLayout.com", root_path
-        li= link_to "Design & Code", "#design"
-        li= link_to "Video Games", "#video-games"
-        li= link_to "Art, Photo, & Video", "#art-photo-video"
+        li= link_to "Design & Code", root_path(anchor: "design")
+        li= link_to "Video Games", root_path(anchor: "video-games")
+        li= link_to "Art, Photo, & Video", root_path(anchor: "art-photo-video")
         li= link_to 'Hire Me', 'mailto:dan@scratchlayout.com'
