@@ -1,40 +1,38 @@
-.row#top-of-page.no_border
-  .section.padded
-    .col-1-3
-      = image_tag "danieltoillion.jpg"
-      span
-        | Daniel Toillion
-        br
-        | UI / UX Contractor
-    .col-2-3
-      blockquote
-        p
-          | Welcome to the web-home of
-          strong=< link_to "Daniel Toillion", "https://www.linkedin.com/in/dtoillion", target: "_blank"
-          | ! - a skateboard-obsessed, animal-loving, coffee-fueled web developer who spends his free time making games and drawing Aaahh!!! Real Monsters fan art. I envision a world where adults play with LEGOs and robots do the driving.
-
-      p.skills
-        span HTML
-        span CSS
-        span Sass
-        span Slim
-        span JS
-        span Git
-        span Responsive-Design
-        span Device-Compatibility
-        span Browser-Compliance
-        span Interactions
-        span Photoshop
-        span Illustrator
-        span Premier Pro
-        span Animate
-        span Unity
+.row.hero#top-of-page
+  .section.center
+    = image_tag "danieltoillion.jpg"
+    h1
+      | Daniel Toillion
+      br
+      | UI / UX Contractor
+    hr.small.opacity-half
+    .col-1-8.space
+    .col-3-4
+      p
+        | Welcome to the web-home of
+        =< link_to "Daniel Toillion", "https://www.linkedin.com/in/dtoillion", target: "_blank"
+        | ! - a skateboard-obsessed, animal-loving, coffee-fueled web developer who spends his free time making games and drawing Aaahh!!! Real Monsters fan art. I envision a world where adults play with LEGOs and robots do the driving.
+    .col-1-8.space
     .clear
 
-.row.hero
-  .section.center
-    h2 Let's make a website!
-    p= mail_to "dan@scratchlayout.com", "Hire Me", class: "btn white"
+.row
+  .section
+    p.skills
+      span HTML
+      span CSS
+      span Sass
+      span Slim
+      span JS
+      span Git
+      span Responsive-Design
+      span Device-Compatibility
+      span Browser-Compliance
+      span Interactions
+      span Photoshop
+      span Illustrator
+      span Premier Pro
+      span Animate
+      span Unity
 
 .row#design
   .section
@@ -65,7 +63,7 @@
     iframe frameborder="0" src="https://itch.io/embed/92237?dark=true" width="552" height="167"
     iframe frameborder="0" src="https://itch.io/embed/91185?dark=true" width="552" height="167"
 
-.row#art-photo-video
+.row#art-photo-video.no_border
   .section
     h1 Art, Photo & Video
     p
@@ -77,14 +75,14 @@
     .clear
     .video_wrap
       iframe width="100%" height="auto" src="https://www.youtube.com/embed/TAOo3P-Dun0" frameborder="0" allowfullscreen="true"
-    .col-1-2= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/18th-street-overpass-time-collapse.jpg"
-    .col-1-2= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/rhode-island-time-collapse.jpg"
     .col-1-2
       .video_wrap
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/jpg5WeQARv8" frameborder="0" allowfullscreen="true"
     .col-1-2
       .video_wrap
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/TNJvX4rvDSI" frameborder="0" allowfullscreen="true"
+    .col-1-2= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/18th-street-overpass-time-collapse.jpg"
+    .col-1-2= image_tag "https://dl.dropboxusercontent.com/u/3968416/scratchlayout/rhode-island-time-collapse.jpg"
     .col-1-2
       .video_wrap
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/ungrxeduxb4" frameborder="0" allowfullscreen="true"
@@ -93,5 +91,10 @@
         iframe width="100%" height="auto" src="https://www.youtube.com/embed/gbLS2Q-wGJI" frameborder="0" allowfullscreen="true"
     .clear
     p.center.see_more= link_to "See More", "https://www.youtube.com/user/upfull0ne", target: "_blank", class: "btn green"
+
+.row.hero
+  .section.center
+    h2 Let's make a website!
+    p= mail_to "dan@scratchlayout.com", "Hire Me", class: "btn white"
 
 script src="//assets.codepen.io/assets/embed/ei.js"

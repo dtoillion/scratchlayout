@@ -22,6 +22,7 @@ body
 
   blockquote
     border-color: $green
+    text-align: left
 
   strong
     font-weight: 700
@@ -59,9 +60,24 @@ body
     .hero
       background: $green
       background: linear-gradient(to bottom right, #5AD427, #A4E786)
+      // background: linear-gradient(to bottom right, #87FC70, #0BD318)
       border: none
-      h2, .btn
+      box-shadow: inset 0px 0px 60px $black
+      img
+        border-radius: 100%
+        width: 100%
+        max-width: 200px
+        margin: 0 auto
+        float: none
+      h1
+        font-weight: 400
+      p, a
+        color: $white
+        font-weight: 700
+      h2
         font-weight: 900
+      hr
+        background: $black
 
   .footer
     background: $black
