@@ -81,6 +81,12 @@ body
       hr
         background: $black
 
+  .header nav
+    border-bottom: none
+    h1
+      text-align: center
+      padding: 0 30px
+
   .footer
     background: $black
 
@@ -121,5 +127,9 @@ body
 @media screen and (max-width: 860px)
   .header nav a
     border-top: 2px dashed $green
+    border-bottom: none
+    &.logo
+      border-top: none
+
   .section.narrow
     max-width: none
