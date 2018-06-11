@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.3.4'
 
 gem 'vital'
 gem 'coffee-rails', '~> 4.1.0'
