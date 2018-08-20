@@ -1,5 +1,7 @@
 doctype html
+
 html
+
   head
     title scratchLayout | Daniel Toillion
     = favicon_link_tag
@@ -11,6 +13,5 @@ html
 
   body
     = render "layouts/header"
-    .contents
-      = yield
+    .contents= yield
     = render "layouts/footer"
